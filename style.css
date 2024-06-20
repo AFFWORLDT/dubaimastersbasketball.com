@@ -1,0 +1,281 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spread items horizontally */
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer p,
+.footer a {
+  margin: 5px 0;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .footer {
+    position: relative;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center align links on desktop */
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1; /* Take up remaining space */
+}
+
+.nav-links li {
+  margin: 0px 20px;
+  position: relative;
+}
+
+.my-link {
+  text-decoration: none !important;
+  color: #003366;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 15px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.my-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ff6600;
+  z-index: -1;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+  padding: 5px 16px;
+  border-radius: 8px;
+}
+
+.my-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.my-link:hover {
+  color: white;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #003366;
+  border-radius: 10px;
+}
+
+.logo-img {
+  height: 100px;
+}
+
+/* Add this CSS to your existing styles */
+
+.carousel-inner img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption h4 {
+  color: white;
+}
+
+.carousel-caption p {
+  color: #f0f0f0;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.beiliev-container {
+  width: 100%;
+  background-color: #30536c;
+  padding:20px 0px   
+}
+.beiliev-container h5 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  font-family: roboto;
+}
+.tournament-schedual-venu-img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .tournament-schedual-venu-img {
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .my-link {
+    text-decoration: none !important;
+    color: #003366;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 10px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .my-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6600;
+    z-index: -1;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+    padding: 5px 16px;
+    border-radius: 0px;
+  }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    justify-content: flex-end; /* Align links to the right on mobile */
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: 18;
+  }
+
+  .nav-links.active {
+    display: flex;
+    justify-content: center; /* Center align links when active */
+  }
+
+  .nav-links li {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .my-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    /* margin-top: 15px; */
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  .burger.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger.active .line2 {
+    opacity: 0;
+  }
+
+  .burger.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .beiliev-container h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: roboto;
+    line-height: 30px;
+  }
+  .carousel-caption h1,
+  .carousel-caption h4 {
+    color: white;
+    font-size: 18px;
+  }
+
+  .carousel-caption p {
+    color: #f0f0f0;
+    font-size: 14px;
+  }
+
+  .carousel-container {
+    position: relative;
+  }
+}
