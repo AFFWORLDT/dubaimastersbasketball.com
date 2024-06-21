@@ -1,0 +1,43 @@
+.text-white {
+  color: #fff !important;
+}
+
+.application-form-header-container {
+  height: 160px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text-application-form {
+  font-size: 38px !important;
+  font-weight: bold;
+  margin-left: 50px;
+  font-family: Sans-serif;
+}
+.subheadline-text-application-form {
+  font-size: 30px !important;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .text-application-form {
+    font-size: 20px !important;
+    margin-left: 50px;
+  }
+  .application-form-header-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subheadline-text-application-form {
+    font-size: 24px !important;
+  }
+  .team-rg-title {
+    font-size: 30px !important;
+  }
+}

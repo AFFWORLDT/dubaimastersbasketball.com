@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../pages/application/application.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <nav style="background-color: #30536c; padding: 18px 0">
+        <marquee class="text-white">
+          DUBAI MASTERS INTERNATIONAL BASKETBALL TOURNAMENT OCTOBER 25-27
+        </marquee>
+      </nav>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a class="my-link" href="/">HOME PAGE</a></li>
+          <li><a class="my-link" href="#">APPLICATION</a></li>
+          <li><a class="my-link" href="#"> Vissa and hotels</a></li>
+          <a href="#">
+            <img src="./../../assets/logo.png" alt="Logo" class="logo-img"
+          /></a>
+          <li><a class="my-link" href="#">TOURNAMENT</a></li>
+          <li><a class="my-link" href="#">GALLERY</a></li>
+          <li><a class="my-link" href="#">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+      <div
+        class="application-form-header-container"
+        style="background-color: #30536c; padding: 18px 0"
+      >
+        <h1 class="text-white text-application-form">Application Form</h1>
+      </div>
+      <h1 class="subheadline-text-application-form">
+        Be a part of the best
+        <span style="color: orange">veteran tournament in the world.</span>
+      </h1>
+    </div>
+
+    <div class="container mt-5">
+      <form>
+        <div class="form-group">
+          <label class="required font-weight-bold">Team Type</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="male"
+              value="Male"
+            />
+            <label class="form-check-label font-weight-bold" for="male"
+              >Male</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="female"
+              value="Female"
+            />
+            <label class="form-check-label font-weight-bold" for="female"
+              >Female</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="category" class="required font-weight-bold"
+            >Category</label
+          >
+          <select class="form-control" id="category">
+            <option>M35+</option>
+            <option>M40+</option>
+            <option>M45+</option>
+            <option>M50+</option>
+            <option>M55+</option>
+            <option>M60+</option>
+            <option>F35+</option>
+            <option>F40+</option>
+            <option>F45+</option>
+            <option>F50+</option>
+            <option>F55+</option>
+            <option>F60+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="select" class="required font-weight-bold">Select</label>
+          <select class="form-control" id="select">
+            <option>Hotel Plaza Duce</option>
+            <option>Hotel Plaza Omis</option>
+            <option>Hotel Sagitra Ruskamen</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="country" class="required font-weight-bold">Country</label>
+          <input
+            type="text"
+            class="form-control"
+            id="country"
+            placeholder="Enter country"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" class="required font-weight-bold">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="required font-weight-bold">Phone</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Enter phone number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="teamName" class="required font-weight-bold"
+            >Team Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="teamName"
+            placeholder="Enter team name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="teamLeader" class="required font-weight-bold"
+            >Team Leader</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="teamLeader"
+            placeholder="Enter team leader name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="numberOfPlayers" class="required font-weight-bold"
+            >Number Of Players</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="numberOfPlayers"
+            placeholder="Enter number of players"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="additionalInformation font-weight-bold fw-bold font-bold"
+            style="font-weight: bold"
+            >Additional Information</label
+          >
+          <textarea
+            class="form-control"
+            id="additionalInformation"
+            rows="3"
+            placeholder="Enter any additional information"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark font-weight-bold">
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../script.js"></script>
+  </body>
+</html>
