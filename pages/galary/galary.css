@@ -5,7 +5,7 @@
   }
   @media (min-width: 576px) {
     .gallery-img {
-      height: 250px; /* Adjust height for larger screens if needed */
+      height: 400px; /* Adjust height for larger screens if needed */
     width: 100%;
 
     }
