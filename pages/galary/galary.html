@@ -3,14 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galary</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="../../pages/application/application.css" />
-    <link rel="stylesheet" href="../galary/galary.css" />
+    <link rel="stylesheet" href="../gallery/gallery.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      .gallery-img {
+        width: 100%;
+        height: 200px; /* Set a fixed height */
+        object-fit: cover; /* Ensures the image covers the box while maintaining aspect ratio */
+      }
+      @media (min-width: 576px) {
+        .gallery-img {
+          height: 250px; /* Adjust height for larger screens if needed */
+        width: 100%;
+
+        }
+      }
+      @media (min-width: 768px) {
+        .gallery-img {
+          height: 300px; /* Adjust height for larger screens if needed */
+        width: 100%;
+
+        }
+      }
+    </style>
   </head>
   <body>
     <nav style="background-color: #30536c; padding: 18px 0">
@@ -42,7 +63,7 @@
           <a class="my-link" href="../tournament/tournament.html">TOURNAMENT</a>
         </li>
 
-        <li><a class="my-link" href="../galary/galary.html">GALLERY</a></li>
+        <li><a class="my-link" href="../gallery/gallery.html">GALLERY</a></li>
         <li>
           <a class="my-link" href="../contact/contact.html">CONTACT</a>
         </li>
@@ -57,36 +78,64 @@
       class="application-form-header-container"
       style="background-color: #30536c; padding: 18px 0"
     >
-      <h1 class="text-white text-application-form">Galary</h1>
+      <h1 class="text-white text-application-form">Gallery</h1>
     </div>
     <div class="container gallery mt-5">
       <div class="row">
         <div class="col-lg-3 col-md-4 col-12 mb-4">
           <img
             src="./../../assets/01.png"
-            class="img-fluid"
-            alt="Basketball Image 3"
+            class="img-fluid gallery-img"
+            alt="Basketball Image 1"
           />
         </div>
         <div class="col-lg-3 col-md-4 col-12 mb-4">
           <img
             src="./../../assets/02.png"
-            class="img-fluid"
-            alt="Basketball Image 3"
+            class="img-fluid gallery-img"
+            alt="Basketball Image 2"
           />
         </div>
         <div class="col-lg-3 col-md-4 col-12 mb-4">
           <img
             src="./../../assets/03.png"
-            class="img-fluid"
+            class="img-fluid gallery-img"
             alt="Basketball Image 3"
           />
         </div>
         <div class="col-lg-3 col-md-4 col-12 mb-4">
           <img
             src="./../../assets/04.png"
-            class="img-fluid"
-            alt="Basketball Image 3"
+            class="img-fluid gallery-img"
+            alt="Basketball Image 4"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mb-4">
+          <img
+            src="./../../assets/05.jpeg"
+            class="img-fluid gallery-img"
+            alt="Basketball Image 5"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mb-4">
+          <img
+            src="./../../assets/06.jpeg"
+            class="img-fluid gallery-img"
+            alt="Basketball Image 6"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mb-4">
+          <img
+            src="./../../assets/07.jpeg"
+            class="img-fluid gallery-img"
+            alt="Basketball Image 7"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mb-4">
+          <img
+            src="./../../assets/08.jpeg"
+            class="img-fluid gallery-img"
+            alt="Basketball Image 8"
           />
         </div>
       </div>

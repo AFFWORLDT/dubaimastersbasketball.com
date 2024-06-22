@@ -1,7 +1,19 @@
-.gallery {
-    margin-top: 20px;
-}
-.gallery img {
+.gallery-img {
     width: 100%;
-    height: auto;
-}
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the box while maintaining aspect ratio */
+  }
+  @media (min-width: 576px) {
+    .gallery-img {
+      height: 250px; /* Adjust height for larger screens if needed */
+    width: 100%;
+
+    }
+  }
+  @media (min-width: 768px) {
+    .gallery-img {
+      height: 300px; /* Adjust height for larger screens if needed */
+    width: 100%;
+
+    }
+  }
