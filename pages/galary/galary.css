@@ -3,17 +3,11 @@
     height: 200px; /* Set a fixed height */
     object-fit: cover; /* Ensures the image covers the box while maintaining aspect ratio */
   }
-  @media (min-width: 576px) {
+  @media (max-width: 768px) {
     .gallery-img {
       height: 400px; /* Adjust height for larger screens if needed */
     width: 100%;
 
     }
   }
-  @media (min-width: 768px) {
-    .gallery-img {
-      height: 300px; /* Adjust height for larger screens if needed */
-    width: 100%;
-
-    }
-  }
+  
