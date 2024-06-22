@@ -70,8 +70,8 @@
               class="form-check-input"
               type="checkbox"
               id="male"
-              name="teamType"
               value="Male"
+              name="teamType"
             />
             <label class="form-check-label font-weight-bold" for="male"
               >Male</label
@@ -82,8 +82,8 @@
               class="form-check-input"
               type="checkbox"
               id="female"
-              name="teamType"
               value="Female"
+              name="teamType"
             />
             <label class="form-check-label font-weight-bold" for="female"
               >Female</label
@@ -173,7 +173,9 @@
           />
         </div>
         <div class="form-group">
-          <label for="additionalInformation" class="font-weight-bold"
+          <label
+            for="additionalInformation font-weight-bold fw-bold font-bold"
+            style="font-weight: bold"
             >Additional Information</label
           >
           <textarea
@@ -213,7 +215,7 @@
       </div>
     </footer>
     <a
-      href="https://wa.me/00971526253448"
+      href="https://wa.me/00971526253448 "
       class="floating-whatsapp"
       target="_blank"
       ><i class="fab fa-whatsapp"></i
@@ -221,12 +223,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../script.js"></script>
     <script>
       document.getElementById('applicationForm').addEventListener('submit', function(event) {
         event.preventDefault();
-
+        
         const formData = {
-          teamType: Array.from(document.querySelectorAll('input[name="teamType"]:checked')).map(checkbox => checkbox.value),
+          teamType: Array.from(document.querySelectorAll('input[name="teamType"]:checked')).map(cb => cb.value),
           category: document.getElementById('category').value,
           country: document.getElementById('country').value,
           email: document.getElementById('email').value,
@@ -242,4 +245,17 @@
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(formData
+          body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert('Email sent successfully!');
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again.');
+        });
+      });
+    </script>
+  </body>
+</html>
