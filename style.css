@@ -28,6 +28,27 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.floating-whatsapp:hover {
+  background-color: #128c7e;
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .footer {
     position: relative;
@@ -147,7 +168,7 @@ body {
 .beiliev-container {
   width: 100%;
   background-color: #30536c;
-  padding:20px 0px   
+  padding: 20px 0px;
 }
 .beiliev-container h5 {
   font-size: 23px;
